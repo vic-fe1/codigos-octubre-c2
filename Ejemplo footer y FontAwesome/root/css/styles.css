@@ -1,0 +1,34 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.titulo {
+    color: red;
+}
+
+div {
+    height: 70vh;
+}
+
+.footer {
+    background-color: #005677;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Este selector llama a los HIJOS de los elementos que cumplan con la condición que le dimos 
+
+Acá llamamos a TODOS los span que sean HIJOS de un elemento con clase FOOTER*/
+.footer span {
+    font-size: 20px;
+}
+
+.fa-instagram {
+    color: #FF0000;
+    font-size: 30px;
+}
+
+.fa-linkedin {
+    color: #f2ff3a;
+    font-size: 30px;
+}
