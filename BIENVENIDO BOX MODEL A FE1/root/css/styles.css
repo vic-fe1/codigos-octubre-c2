@@ -1,0 +1,17 @@
+/* ESTILOS DE LA CAJA */ 
+.caja-grande {
+    background-color: #ff0000;
+    text-align: center;
+}
+
+
+.caja {
+    height: 500px;
+    width: 350px;
+    margin: 50px;
+    border: 5px solid #000; 
+    text-align: center;
+    display: inline-block;
+/* USAR BORDE O COLOR PARA SABER CUANTO ESPACIO ESTA OCUPANDO MI ELEMENTO 
+    border: 1px solid #FF0000; */
+}
