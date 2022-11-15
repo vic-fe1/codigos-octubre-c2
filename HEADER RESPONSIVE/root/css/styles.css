@@ -1,0 +1,76 @@
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0ede9;
+}
+
+.flex {
+    display: flex;
+}
+
+/* estilos del header */ 
+
+.container-header {
+    height: 60px;
+    background-color: #FFF;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    /* CUANDO USAMOS PORCENTAJE; LE ESTAMOS DICIENDO QUE ES EL VALOR EN RELACION A SU CONTENEDOR */
+    height: 100%;
+}
+
+.navbar {
+    width: 30%;
+}
+
+.lista {
+    justify-content: space-around;
+    list-style-type: none;  
+}
+
+.lista li {
+    margin: 5px 25px;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    text-transform: uppercase;
+} 
+
+.fa-burger{
+    visibility: hidden;
+}
+
+/* RESPONSIVE | MEDIA QUERIES */
+/* min-width (a partir de) y max-width (HASTA)  */
+@media screen and (max-width: 700px) {
+    .navbar {
+        display: none;
+    }
+
+    .fa-burger{
+        visibility: visible;
+        font-size: 24px;
+    }
+
+}
+
+/* EJEMPLO CARDS */
+
+/* @media screen and (max-width: 900px) {
+    .container-cards {
+        flex-direction: column;
+        margin-top:50px;
+    }
+} */
