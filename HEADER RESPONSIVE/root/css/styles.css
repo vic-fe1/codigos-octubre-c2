@@ -14,7 +14,8 @@ body {
     display: flex;
 }
 
-/* estilos del header */ 
+/* VERSION MOBILE FIRST 
+estilos del header */ 
 
 .container-header {
     height: 60px;
@@ -29,7 +30,7 @@ body {
 }
 
 .navbar {
-    width: 30%;
+    display: none;
 }
 
 .lista {
@@ -49,28 +50,47 @@ body {
 } 
 
 .fa-burger{
-    visibility: hidden;
+    visibility: visible;
+    font-size: 24px;
 }
+
+
 
 /* RESPONSIVE | MEDIA QUERIES */
 /* min-width (a partir de) y max-width (HASTA)  */
-@media screen and (max-width: 700px) {
-    .navbar {
-        display: none;
+@media screen and (min-width:550px)  {
+    .container-header {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container-header {
+        justify-content: space-around;
     }
 
     .fa-burger{
-        visibility: visible;
-        font-size: 24px;
+        visibility: hidden;
+    }
+
+    .navbar {
+        display: block;
     }
 
 }
-
 /* EJEMPLO CARDS */
 
-/* @media screen and (max-width: 900px) {
-    .container-cards {
-        flex-direction: column;
-        margin-top:50px;
-    }
-} */
+
+h1 {
+color: yellow;
+}
+
+
+
+#id {
+    color: blue;
+}
+
+.clase {
+    color: red !important;
+}
