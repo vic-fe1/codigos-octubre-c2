@@ -1,0 +1,82 @@
+/* ESTILOS GENERALES */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* estilos generales */
+
+.flex {
+    display: flex;
+}
+
+
+/* estilos generales - botones */
+
+.btn {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0 16px;
+  text-decoration: none;
+  height: 48px;
+  border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/* ESTILOS DEL HEADER */
+
+/* ESTILOS DEL MAIN */
+
+/* ESTILOS DEL FORM */
+
+.container-btn {
+    /* VIEWPORT HEIGHT */
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.login {
+  width: 332px;
+  background-color: #1877f2;
+  font-size: 20px;
+}
+
+.login:hover {
+    background-color: #0d3b77;
+}
+
+.login:active {
+    border: 1px solid #FFF;
+}
+
+.new-account {
+  font-size: 17px;
+  background-color: #42b72a;
+  padding-top: 16px; 
+}
+
+/* PSEUDOCLASES */ 
+/* HOVER DETECTA CUANDO EL MOUSE PASA POR ENCIMA DEL ELEMENTO */
+.new-account:hover {
+    background-color: #38712d;
+}
+
+
+/* PSEUDO ELEMENTOS */
+.new-account::after {
+    content: '*';
+    color: #FF0000;
+    font-size: 24px;
+}
+
+
+
+
