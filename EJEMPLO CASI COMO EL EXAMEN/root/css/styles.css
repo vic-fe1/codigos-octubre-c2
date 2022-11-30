@@ -1,0 +1,111 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.container-hero {
+    width: 80vw;
+    margin: 95px 10vw;
+    justify-content: space-between;
+}
+
+.hero-img {
+    /* EL PORCENTAJE ES EN RELACION AL CONTENEDOR PADRE */
+    width: 50%;
+}
+
+.hero-text {
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    line-height: 57px;
+    text-align: right;
+}
+
+.hero-text p {
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.hero-text button {
+    width: 150px;
+    height: 50px;
+    background-color: blueviolet;
+    color: #FFF;
+    border:none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES - MOBILE */
+
+@media screen and (max-width: 480px) {
+    .container-hero {
+        flex-direction: column;
+    }
+
+    .hero-img, .hero-text {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .hero-text h1, .hero-text p, .hero-text button {
+        margin-bottom: 25px;
+    }
+
+}
