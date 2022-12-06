@@ -1,0 +1,85 @@
+/* MIXIN Agrupar valores que voy a reutilizar */
+/* Usar un contenedor con la clase .container-padre y dentro cualquier contenedor con la clase .card para armar la estructura */
+.container-padre {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.container-padre .card {
+  background-color: rgb(121, 121, 121);
+  color: rgb(8, 8, 61);
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #c7c7c7;
+  box-shadow: 20px 20px 60px #a9a9a9, -20px -20px 60px #e5e5e5;
+  transition: all 0.75s;
+}
+
+/* SINK */
+@-webkit-keyframes bajarysubir {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bajarysubir {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bajarysubir:hover {
+  -webkit-animation: sink 3s linear;
+          animation: sink 3s linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+/* USAR LA CLASE .bajarysubir EN EL ELEMENTO */
+/* EL MIXIN DEBE REUTILIZARSE EN EL MISMO ARCHIVO */
+.parrafos {
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: underline;
+  color: #000;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.titulos {
+  font-size: 36px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* USO DE PARTIALS -> BLOQUE DE CODIGO QUE YO PIENSO REUTILIZAR EN OTROS PROYECTOS
+EL ARCHIVO SE ESCRIBE CON UN "_"ADELANTE DEL NOMBRE */
+/* TRAE EL CODIGO DE FLEXCARDS Y ANIMATIONS */
+/* D.R.Y -> No repetirme */
+/* SEPARATE OF CONCERNS -> SEPARAR CADA COSA SEGUN SU FUNCION */
+body {
+  background-color: #c7c7c8;
+}
+
+.header {
+  color: red;
+}/*# sourceMappingURL=mainsass.css.map */

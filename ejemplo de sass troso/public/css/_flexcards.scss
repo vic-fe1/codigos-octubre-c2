@@ -1,0 +1,26 @@
+/* MIXIN Agrupar valores que voy a reutilizar */
+
+  $mainColor: rgb(121, 121, 121);
+  $altColor: rgb(8, 8, 61);
+  $mainColorDark: #000;
+
+/* Usar un contenedor con la clase .container-padre y dentro cualquier contenedor con la clase .card para armar la estructura */
+
+.container-padre {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  .card {
+    background-color: $mainColor;
+    color: $altColor;
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #c7c7c7;
+    box-shadow: 20px 20px 60px #a9a9a9, -20px -20px 60px #e5e5e5;
+    transition: all 0.75s;
+  }
+}
